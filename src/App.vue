@@ -1,10 +1,16 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
+<NavbarComp/>
   <router-view/>
 </template>
+
+<script>
+import NavbarComp from './components/NavbarComp.vue';
+export default{
+  components: {
+    NavbarComp
+  }
+}
+</script>
 
 <style>
 #app {
@@ -21,10 +27,11 @@ nav {
 
 nav a {
   font-weight: bold;
-  color: #2c3e50;
+  color: #000000;
+  text-decoration: none;
 }
 
 nav a.router-link-exact-active {
-  color: #42b983;
+  color: #656f7d;
 }
 </style>

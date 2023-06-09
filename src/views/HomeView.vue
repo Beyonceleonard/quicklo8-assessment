@@ -1,18 +1,23 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <SplashscreenComp/>
+  </div>
+  <div>
+    <MyMapComp/>
   </div>
 </template>
 
 <script>
+import SplashscreenComp from '@/components/SplashscreenComp.vue';
+import MyMapComp from '@/components/MyMapComp.vue';
+
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
 
 export default {
   name: 'HomeView',
   components: {
-    HelloWorld
-  }
+    SplashscreenComp,
+    MyMapComp
+}
 }
 </script>
