@@ -17,7 +17,7 @@ export default {
   name: 'HomeView',
   components: {
     SplashscreenComp,
-    MyMapComp
+    MyMapComp,
 }
 }
 </script>
