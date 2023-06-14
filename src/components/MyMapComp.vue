@@ -6,7 +6,7 @@
 
 <script>
 import L from 'leaflet';
-import vechicleCoordinates from '../data/vechicleCoordinates';
+// import vechicleCoordinates from '../data/vechicleCoordinates';
 export default {
     mounted(){
         const map = L.map('map').fitWorld();
@@ -25,13 +25,13 @@ function onLocationError(e) {
     alert(e.message);
 }
 map.on('locationerror', onLocationError);
-for(const vechicleCoordinate of vechicleCoordinates)
-L.marker([vechicleCoordinate.latitude,vechicleCoordinate.longitude],{icon: taxiIcon}).addTo(map);
+// for(const vechicleCoordinate of vechicleCoordinates)
+// L.marker([vechicleCoordinate.latitude,vechicleCoordinate.longitude],{icon: taxiIcon}).addTo(map);
 
- var taxiIcon = L.icon({
-    iconUrl: '../assets/taxicab.png',
-    iconSize: [50,50]
- })
+//  var taxiIcon = L.icon({
+//     iconUrl: '../assets/taxicab.png',
+//     iconSize: [50,50]
+//  })
     }
 }
 
