@@ -31,7 +31,8 @@ map.on('locationerror', onLocationError);
      iconSize: [50,50]
  })
  for(const vechicleCoordinate of vechicleCoordinates)
- L.marker([vechicleCoordinate.latitude,vechicleCoordinate.longitude],{icon: taxiIcon}).addTo(map);
+ L.marker([vechicleCoordinate.latitude,vechicleCoordinate.longitude],{icon: taxiIcon}).addTo(map)
+ .bindPopup(vechicleCoordinate.heading);
     }
 }
 
